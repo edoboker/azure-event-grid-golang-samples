@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	eventgrid "github.com/Azure/azure-sdk-for-go/profiles/laeventGridClient/eventgrid/eventgrid"
+	eventgrid "github.com/Azure/azure-sdk-for-go/profiles/latest/eventgrid/eventgrid"
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/date"
 	uuid "github.com/google/uuid"
@@ -23,6 +23,7 @@ func main() {
 	eventType := "Demo"
 	dataVersion := "v2"
 
+	//All of the fields are mandatory - please see https://docs.microsoft.com/en-us/azure/event-grid/event-schema#event-properties
 	events := []eventgrid.Event{
 		{
 			ID:          &id,
