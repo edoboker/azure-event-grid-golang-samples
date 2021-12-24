@@ -5,3 +5,5 @@ Main features:
 1. Proper import statement
 2. Usage of key for authentication with autorest
 3. Redirection to Azure documentation for mandatory event fields
+
+I don't think this should include benchmarks
